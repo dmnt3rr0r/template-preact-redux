@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || webpack-dev-server --open",
+    "build": "preact build",
+    "serve": "preact build && preact serve",
+    "dev": "preact watch",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "public/*"
+  ],
+  "browserlist": [ "> ie 11", "last 2 versions", "> 5%" ],
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-synacor": "^2.0.2",
+    "if-env": "^1.0.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "*",
+    "webpack-dev-server": "*",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2"
+  },
+  "dependencies": {
+    "preact": "^8.2.6",
+    "preact-redux": "^1.2.0",
+    "redux": "^3.6.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "template-sao-first",
+  "version": "0.0.0",
+  "description": "ha",
+  "repository": {
+    "url": "dmnt3rr0r/template-sao-first",
+    "type": "git"
+  },
+  "author": "dmnt3rr0r <donovan.nye@gmail.com> (github.com/dmnt3rr0r)",
+  "license": "MIT",
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "superb": "^1.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "sao": "^0.22.1"
+  }
+}
