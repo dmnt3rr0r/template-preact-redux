@@ -8,7 +8,8 @@
     "build": "preact build",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "ava"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -17,16 +18,24 @@
     "public/*"
   ],
   "browserlist": [ "> ie 11", "last 2 versions", "> 5%" ],
+  "ava": {
+    "failFast": false,
+    "failWithoutAssertions": true,
+    "tap": true,
+    "babel": "inherit"
+  },
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-synacor": "^2.0.2",
     "if-env": "^1.0.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
     "webpack": "*",
     "webpack-dev-server": "*",
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2"
+    "babel-loader": "^7.1.2",
+    "ava": "^0.24.0"
   },
   "dependencies": {
     "preact": "^8.2.6",
