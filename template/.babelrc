@@ -4,6 +4,8 @@
     [ "env", { "targets": { "browsers": [ "last 2 versions", "safari >= 7" ] } } ]
   ],
   "plugins": [
-    [ "transform-react-jsx", { "pragma": "h" }]
+    [ "transform-react-jsx", { "pragma": "h" }],
+    "transform-object-rest-spread",
+    "transform-class-properties"
   ]
 }

@@ -1,13 +1,11 @@
 {
   "private": true,
   "name": "<%= name %>",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || webpack-dev-server --open",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
-    "dev": "preact watch",
+    "flow": "flow",
     "lint": "eslint src",
     "test": "ava"
   },
@@ -25,19 +23,28 @@
     "babel": "inherit"
   },
   "devDependencies": {
-    "eslint": "^4.9.0",
-    "eslint-config-synacor": "^2.0.2",
     "if-env": "^1.0.0",
+    "ava": "^0.24.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-register": "^6.26.0",
-    "flow-bin": "*",
-    "webpack": "*",
-    "webpack-dev-server": "*",
+    "flow-bin": "^0.64.0",
+    "flow-typed": "^2.2.3",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "ava": "^0.24.0"
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-flow": "^2.29.1"
   },
   "dependencies": {
     "preact": "^8.2.6",
